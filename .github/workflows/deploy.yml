@@ -14,8 +14,9 @@ concurrencies:
 
 jobs:
   build:
-    name: github-pages
-    url: ${{ steps.github-pages.outputs.url }}
+    environment:
+      name: github-pages
+      url: ${{ steps.github-pages.outputs.url }}
   runs-on: ubuntu-latest
   steps:
     - name: Checkout
