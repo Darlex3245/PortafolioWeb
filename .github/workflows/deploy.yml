@@ -30,7 +30,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Setup GitHub Pages
-        uses: actions/configure-github-pages@v5
+        uses: actions/configure-pages@v5
       - name: Upload Dist Folder to Pages
         uses: actions/upload-pages-artifact@v3
         with:
